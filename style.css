@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 10px auto;
+  max-width: 120px;
+}
+
+.welcome-banner {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.date-banner {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #0066cc;
+  font-weight: bold;
+}
+
+.search-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="date"] {
+  padding: 8px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+}
+
+th {
+  background: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+td.holiday {
+  background: #ffdddd;
+  font-weight: bold;
+  color: #a00;
+}
+
+td.lunch {
+  background: #f0f0f0;
+  font-style: italic;
+  color: #666;
+}
+
+td a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+tr.today {
+  background: #fff7cc !important;
+  font-weight: bold;
+}
+
+.highlight {
+  background: #d1ecf1 !important;
+}
+
+/* Login overlay */
+#loginOverlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+#loginBox {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 320px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+#loginBox h2 {
+  margin-bottom: 20px;
+}
+
+#loginBox input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+#loginBox button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#loginBox button:hover {
+  background: #45a049;
+}
+
+#loginError {
+  color: red;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Top buttons */
+.top-buttons {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.top-buttons button {
+  margin: 0 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+}
+
+#logoutBtn { background: #e74c3c; }
+#refreshBtn { background: #3498db; }
+
+/* Watermark */
+#watermark {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  font-size: 80px;
+  color: rgba(0,0,0,0.07);
+  pointer-events: none;
+  z-index: 0;
+  font-weight: bold;
+}
